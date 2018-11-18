@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vlift</title>
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm pt-3 pl-5 pb-3 pr-5">
+		<!-- Brand -->
+		<a class="navbar-brand" href="#">
+			<img src="media/logo.jpg" style="width: 50px;">
+		</a>
+		<ul class="navbar-nav ml-auto">
+		<!-- Dropdown -->
+		
+		<li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+		    <span class="mt-2 mr-3">Welcome ABC</span>
+		    <i class="fas fa-user"></i>
+		  </a>
+		  <div class="dropdown-menu">
+		    <a class="dropdown-item" href="#">Update</a>
+		    <a class="dropdown-item" href="#">Delete</a>
+		    <a class="dropdown-item" href="#">Logout</a>
+		  </div>
+		</li>
+
+	  </ul>
+	</nav>
+
+	<div class="container mt-5 mb-5">
+		<h2 class="text-center">Your Bookings</h2>
+		<hr class="mb-5 justify-content-center w-25">
+		<ul class="nav nav-tabs nav-justified border-0 mb-5" role="tablist">
+		    <li class="nav-item">
+		      <a class="nav-link active" data-toggle="tab" href="#new">New</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" data-toggle="tab" href="#ongoing">Ongoing</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" data-toggle="tab" href="#hired">Hired</a>
+		    </li>
+		</ul>
+	</div>
+
+	<div class="tab-content mb-5">
+	    <div id="new" class="container-fluid tab-pane active"><br>
+	    	<div class="container-fluid">
+	    		<div class="row" id="newRequest">
+	    			<div class="col-md-4 mb-5">
+		      			<div class="card">
+						  <div class="card-header text-center p-5">
+						  	<i class="fas fa-map-marker fa-lg"></i><br><br>
+						  	<h5>PQR XYZ, MNODEF</h5>
+						  </div>
+						  <div class="card-body text-center p-5">
+						  	<h4 class="mb-4">Qwerty Uiop</h4>
+						  	<p class="mb-4 font-italic">DD/MM/YY - DD/MM/YY</p>
+						  	<h5 class="mb-4"><i class="fas fa-rupee-sign"></i> 12345</h5>
+						  </div> 
+						  <div class="card-footer text-center p-5"> 
+						  	<button class="mr-3 custom-button bg-light text-dark int-btn" onclick="addToOngoing('PQR XYZ, MNODEF','user1','Qwerty Uiop','DD/MM/YY - DD/MM/YY','12345','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');"><i class="fas fa-check mr-3"></i> Interested</button>
+						  	<button class="ml-3 custom-button bg-dark text-white not-int-btn"><i class="fas fa-times mr-3"></i> Not Interested</button>
+						  </div>
+						</div>
+					</div>
+	    			<div class="col-md-4 mb-5">
+		      			<div class="card">
+						  <div class="card-header text-center p-5">
+						  	<i class="fas fa-map-marker fa-lg"></i><br><br>
+						  	<h5>PQR XYZ, MNODEF</h5>
+						  </div>
+						  <div class="card-body text-center p-5">
+						  	<h4 class="mb-4">Asdfg Hjkl</h4>
+						  	<p class="mb-4 font-italic">DD/MM/YY - DD/MM/YY</p>
+						  	<h5 class="mb-4"><i class="fas fa-rupee-sign"></i> 12345</h5>
+						  </div> 
+						  <div class="card-footer text-center p-5"> 
+						  	<button class="mr-3 custom-button bg-light text-dark int-btn" onclick="addToOngoing('PQR XYZ, MNODEF','user2','Asdfg Hjkl','DD/MM/YY - DD/MM/YY','12345','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');"><i class="fas fa-check mr-3"></i> Interested</button>
+						  	<button class="ml-3 custom-button bg-dark text-white not-int-btn"><i class="fas fa-times mr-3"></i> Not Interested</button>
+						  </div>
+						</div>
+					</div>
+	    			<div class="col-md-4 mb-5">
+		      			<div class="card">
+						  <div class="card-header text-center p-5">
+						  	<i class="fas fa-map-marker fa-lg"></i><br><br>
+						  	<h5>PQR XYZ, MNODEF</h5>
+						  </div>
+						  <div class="card-body text-center p-5">
+						  	<h4 class="mb-4">Zxcv Bnm</h4>
+						  	<p class="mb-4 font-italic">DD/MM/YY - DD/MM/YY</p>
+						  	<h5 class="mb-4"><i class="fas fa-rupee-sign"></i> 12345</h5>
+						  </div> 
+						  <div class="card-footer text-center p-5"> 
+						  	<button class="mr-3 custom-button bg-light text-dark int-btn" onclick="addToOngoing('PQR XYZ, MNODEF','user3','Asdfg Hjkl','DD/MM/YY - DD/MM/YY','12345','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');"><i class="fas fa-check mr-3"></i> Interested</button>
+						  	<button class="ml-3 custom-button bg-dark text-white not-int-btn"><i class="fas fa-times mr-3"></i> Not Interested</button>
+						  </div>
+						</div>
+					</div>
+	    		</div>
+	    	</div>
+		</div>
+
+	    <div id="ongoing" class="container-fluid tab-pane fade"><br>
+	    	<div class="container-fluid">
+	    		<div class="row" id="acceptedRequest">
+	    		</div>
+	    	</div>
+	    </div>
+	    <div id="hired" class="container-fluid tab-pane fade"><br>
+	    	<div class="container-fluid">
+	    		<div class="row" id="completedBooking">
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="container-fluid footer bg-dark text-center text-white">
+		<span>© 2018 Vlift. All Rights Reserved.</span>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
